@@ -9,6 +9,7 @@
         /* Your existing styles go here */
         /* Reset and basic styling */
        /* Reset margin and padding */
+       /* Reset margin and padding */
         html, body {
             height: 100%;
             margin: 0;
@@ -22,88 +23,152 @@
             color: #333;
             display: grid;
             place-items: center;
+            padding: 20px; /* Ensure spacing around content */
         }
         
+        /* Container styling */
         .container {
             width: 100%;
             max-width: 1200px; /* Adjust as needed */
             padding: 20px;
             box-sizing: border-box;
             background-color: #fff; /* Ensures the container has a background */
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+            overflow: hidden; /* Ensure content doesn't overflow */
         }
         
-        header, section, footer {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-        }
-        
+        /* Header styling */
         header {
             background-color: #001F3F;
             color: #fff;
-            padding: 1em;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
         }
         
-        header h1, header p {
+        header h1 {
             margin: 0;
+            font-size: 2.5em; /* Larger header text */
         }
         
+        header p {
+            margin: 0;
+            font-size: 1.2em; /* Slightly larger subtext */
+        }
+        
+        /* Social links */
         .social-links {
             display: inline-block; /* Center social links horizontally */
             margin-top: 10px;
         }
         
         .social-links a {
-            margin: 0 10px;
+            margin: 0 15px;
             color: #fff;
             text-decoration: none;
+            font-size: 1.2em; /* Larger social link icons */
         }
         
+        /* Section styling */
         section {
-            padding: 20px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
         
         h1, h2, h3 {
             color: #001F3F;
+            margin-top: 0;
         }
         
         a {
             color: #FFD700;
+            text-decoration: none; /* Remove underline from links */
         }
         
+        a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+        
+        /* Resume styling */
         .resume {
             margin-top: 20px;
         }
         
+        /* Portfolio item styling */
         .portfolio-item {
             margin-bottom: 20px;
+            border-bottom: 1px solid #ddd; /* Subtle border between items */
+            padding-bottom: 20px;
         }
         
+        /* Footer styling */
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background-color: #001F3F;
             color: #fff;
+            border-radius: 0 0 10px 10px;
         }
         
+        /* Course list styling */
         .course-list {
             margin-bottom: 20px;
         }
         
         .course-list h3 {
             margin: 0;
+            color: #001F3F;
         }
         
         .course-list p {
             margin: 5px 0;
         }
         
+        /* Link color adjustment */
         a {
             color: green;
         }
+        
+        /* Additional styling for buttons */
+        button {
+            background-color: #001F3F;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+        
+        /* Add responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+        
+            header {
+                padding: 15px;
+            }
+        
+            section {
+                padding: 20px;
+            }
+        
+            .social-links a {
+                margin: 0 10px;
+            }
+        
+            .portfolio-item {
+                margin-bottom: 15px;
+            }
+        }
+
 
     </style>
 </head>
