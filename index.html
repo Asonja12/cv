@@ -92,8 +92,10 @@
             border-radius: 0 0 10px 10px;
             margin: 0;
             width: 100%;
-            clear: both; /* Ensure it clears floats if used */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+            position: relative; /* Ensure it's positioned correctly within the document flow */
         }
+
         
         button {
             background-color: #001F3F;
