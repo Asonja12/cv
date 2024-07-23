@@ -10,10 +10,12 @@
         /* Reset and basic styling */
        /* Reset margin and padding */
        /* Reset margin and padding */
+        /* Reset margin and padding */
         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
+            box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
         }
         
         /* Center content */
@@ -21,9 +23,12 @@
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             color: #333;
-            display: grid;
-            place-items: center;
-            padding: 20px; /* Ensure spacing around content */
+            display: flex; /* Changed to flex for better alignment */
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+            justify-content: center; /* Center vertically */
+            min-height: 100vh; /* Ensure body takes up at least full viewport height */
+            padding: 20px; /* Add padding around content */
         }
         
         /* Container styling */
@@ -36,6 +41,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
             overflow: hidden; /* Ensure content doesn't overflow */
+            margin: 0; /* Remove default margin */
         }
         
         /* Header styling */
@@ -44,6 +50,7 @@
             color: #fff;
             padding: 20px;
             border-radius: 10px 10px 0 0;
+            margin: 0; /* Ensure no margin is added */
         }
         
         header h1 {
@@ -109,6 +116,7 @@
             background-color: #001F3F;
             color: #fff;
             border-radius: 0 0 10px 10px;
+            margin: 0; /* Ensure no margin is added */
         }
         
         /* Course list styling */
