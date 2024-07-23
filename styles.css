@@ -1,1 +1,174 @@
+html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background-color: #001F3F;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        
+        .social-links {
+            margin-top: 10px;
+        }
+        
+        .social-links a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto; /* Center the container */
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1; /* Allow container to grow and push footer to the bottom */
+        }
+        
+        section {
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        h1, h2, h3 {
+            color: #001F3F;
+            margin-top: 0;
+        }
+        
+        a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #001F3F;
+            color: #fff;
+            border-radius: 0 0 10px 10px;
+            margin: 0;
+            width: 100%;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+            position: relative; /* Ensure it's positioned correctly within the document flow */
+        }
 
+        
+        button {
+            background-color: #001F3F;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Style for sectioing class to make it stand out */
+        .sectioing {
+            background-color: #003366; /* Dark background color */
+            color: #fff; /* White text color */
+            padding: 10px; /* Padding around the text */
+            border-radius: 5px; /* Rounded corners */
+            text-align: center; /* Center the text */
+            margin: 20px 0; /* Space above and below */
+            font-size: 1.5em; /* Larger font size for emphasis */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        }
+        
+        /* Optional: Style adjustments for course-list items */
+        .course-list {
+            margin-bottom: 20px; /* Space below each course list item */
+        }
+        
+        .course-list h2 {
+            font-size: 1.2em; /* Slightly smaller font size for course titles */
+            margin: 0; /* Remove default margin */
+        }
+        
+        .course-list p {
+            margin: 5px 0; /* Space between lines */
+        }
+        
+        .course-list a {
+            color: #FFD700; /* Highlight link color */
+        }
+        
+        .course-list a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        
+        /* Mobile responsive styles */
+        @media (max-width: 600px) {
+            .sectioing {
+                font-size: 1.2em; /* Slightly smaller font size on small screens */
+                padding: 8px; /* Reduced padding for small screens */
+                margin: 15px 0; /* Adjusted margin for small screens */
+            }
+        
+            .course-list h2 {
+                font-size: 1em; /* Adjust font size for course titles */
+            }
+        
+            .course-list p {
+                font-size: 0.9em; /* Slightly smaller font size for text */
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+        
+            header {
+                padding: 15px;
+            }
+        
+            section {
+                padding: 20px;
+            }
+        
+            .social-links a {
+                margin: 0 10px;
+            }
+        }
