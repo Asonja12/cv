@@ -10,57 +10,51 @@
             height: 100%;
             margin: 0;
             padding: 0;
-            box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+            box-sizing: border-box;
         }
-        
-        /* Center content */
+
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             color: #333;
-            display: flex; /* Flexbox for layout */
+            display: flex;
             flex-direction: column;
-            align-items: center; /* Center horizontally */
-            padding: 20px; /* Add padding around content */
-            min-height: 100vh; /* Ensure body takes up at least full viewport height */
+            align-items: center;
+            padding: 0; /* Remove padding to use container padding */
+            min-height: 100vh;
         }
         
-        /* Container styling */
         .container {
             width: 100%;
-            max-width: 1200px; /* Adjust as needed */
+            max-width: 1200px;
             padding: 20px;
             box-sizing: border-box;
-            background-color: #fff; /* Ensures the container has a background */
+            background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
-            overflow: hidden; /* Ensure content doesn't overflow */
-            margin: 0 auto; /* Center container horizontally */
-            flex: 1; /* Allow container to grow and fill available space */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px auto; /* Center container with margin */
         }
         
-        /* Header styling */
         header {
             background-color: #001F3F;
             color: #fff;
             padding: 20px;
             border-radius: 10px 10px 0 0;
-            margin: 0; /* Ensure no margin is added */
         }
         
         header h1 {
             margin: 0;
-            font-size: 2.5em; /* Larger header text */
+            font-size: 2.5em;
         }
         
         header p {
             margin: 0;
-            font-size: 1.2em; /* Slightly larger subtext */
+            font-size: 1.2em;
         }
         
-        /* Social links */
         .social-links {
-            display: inline-block; /* Center social links horizontally */
+            display: inline-block;
             margin-top: 10px;
         }
         
@@ -68,14 +62,15 @@
             margin: 0 15px;
             color: #fff;
             text-decoration: none;
-            font-size: 1.2em; /* Larger social link icons */
+            font-size: 1.2em;
         }
         
-        /* Section styling */
         section {
             padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff; /* Ensure sections have background */
+            margin-bottom: 20px; /* Add margin to separate sections */
         }
         
         h1, h2, h3 {
@@ -85,36 +80,31 @@
         
         a {
             color: #FFD700;
-            text-decoration: none; /* Remove underline from links */
+            text-decoration: none;
         }
         
         a:hover {
-            text-decoration: underline; /* Add underline on hover */
+            text-decoration: underline;
         }
         
-        /* Resume styling */
         .resume {
             margin-top: 20px;
         }
         
-        /* Portfolio item styling */
         .portfolio-item {
             margin-bottom: 20px;
-            border-bottom: 1px solid #ddd; /* Subtle border between items */
+            border-bottom: 1px solid #ddd;
             padding-bottom: 20px;
         }
         
-        /* Footer styling */
         footer {
             text-align: center;
             padding: 15px;
             background-color: #001F3F;
             color: #fff;
             border-radius: 0 0 10px 10px;
-            margin: 0; /* Ensure no margin is added */
         }
         
-        /* Course list styling */
         .course-list {
             margin-bottom: 20px;
         }
@@ -128,12 +118,6 @@
             margin: 5px 0;
         }
         
-        /* Link color adjustment */
-        a {
-            color: green;
-        }
-        
-        /* Additional styling for buttons */
         button {
             background-color: #001F3F;
             color: #fff;
@@ -146,10 +130,9 @@
         }
         
         button:hover {
-            background-color: #0056b3; /* Darker shade on hover */
+            background-color: #0056b3;
         }
         
-        /* Add responsive design */
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
@@ -170,6 +153,8 @@
             .portfolio-item {
                 margin-bottom: 15px;
             }
+        }
+
     </style>
 
 
