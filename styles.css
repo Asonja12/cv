@@ -68,7 +68,7 @@ html, body {
         }
         
         a {
-            color: #FFD700;
+            color: #001F3F;
             text-decoration: none;
         }
         
@@ -106,7 +106,7 @@ html, body {
         
         /* Style for sectioing class to make it stand out */
         .sectioing {
-            background-color: #003366; /* Dark background color */
+            background-color: #001F3F; /* Dark background color */
             color: #fff; /* White text color */
             padding: 10px; /* Padding around the text */
             border-radius: 5px; /* Rounded corners */
@@ -131,7 +131,7 @@ html, body {
         }
         
         .course-list a {
-            color: #FFD700; /* Highlight link color */
+            color: #001F3F; /* Highlight link color */
         }
         
         .course-list a:hover {
