@@ -18,6 +18,8 @@
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             color: #333;
+            display: flex;
+            flex-direction: column;
         }
         
         header {
@@ -58,6 +60,7 @@
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1; /* Allow container to grow and push footer to the bottom */
         }
         
         section {
@@ -88,9 +91,8 @@
             color: #fff;
             border-radius: 0 0 10px 10px;
             margin: 0;
-            position: relative;
-            bottom: 0;
             width: 100%;
+            clear: both; /* Ensure it clears floats if used */
         }
         
         button {
@@ -107,7 +109,7 @@
         button:hover {
             background-color: #0056b3;
         }
-
+        
         /* Style for sectioing class to make it stand out */
         .sectioing {
             background-color: #003366; /* Dark background color */
@@ -158,7 +160,6 @@
                 font-size: 0.9em; /* Slightly smaller font size for text */
             }
         }
-
         
         @media (max-width: 768px) {
             .container {
